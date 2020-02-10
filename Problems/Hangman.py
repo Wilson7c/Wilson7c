@@ -1,3 +1,4 @@
+# Hangman Project - Wilson Cedillo
 import random
 gallows = [
     '''
@@ -102,7 +103,6 @@ while not done:
             letters_remaining -= 1
         else:
             print("__", end=" ")
-
 
     if incorrect_guess >= 6:
         print("You've lost")
