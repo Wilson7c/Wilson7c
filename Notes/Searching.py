@@ -101,6 +101,13 @@ else:
 
 
 
+def split_line(line):
+    return re.findall('[A-Za-z]+(?:\'[A-Za-z]+)?', line)
 
 
 
+file = open("resources/alice_in_wonderland")
+
+for line in file:
+    line = line.strip().upper()
+    print(line.split())
