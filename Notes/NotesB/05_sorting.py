@@ -1,4 +1,4 @@
-# Sorting
+f# Sorting
 import random
 import time
 
