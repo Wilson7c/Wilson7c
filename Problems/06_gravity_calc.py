@@ -10,7 +10,23 @@
 
 # Make a calculator that does all of the following
 # (3pts) takes the inputs for mass 1, mass 2, and distance between the two objects (m1, m2, and r)
+
+import random
+
+m1 = 10
+m2 = 200
+r = 9.8
+g = 6.67e11
+
+force = g * (m1 * m2) / r**2
+print(force)
+
+
+
 # (4pts) contains exceptions for any potential errors (value and dividebyzero).
+
+
+
 # (2pts) keeps asking for inputs until they are valid (see while loop from notes)
 # (3pts) calculates the force of gravity in Newtons and print the result to the user in scientific notation to two decimals.
 
