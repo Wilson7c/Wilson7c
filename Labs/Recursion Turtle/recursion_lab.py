@@ -16,3 +16,26 @@ Turtle Recursion (30pts)
   Have fun!
 
 '''
+
+import turtle
+
+my_turtle = turtle.Turtle()
+my_turtle.shape("turtle")
+my_screen = turtle.Screen()
+my_screen.bgcolor('white')
+
+def htree (x, y, width, height, depth):
+    if depth > 0:
+        my_turtle.up()
+        my_turtle.goto(x, y)
+        my_turtle.down()
+        my_turtle.goto(x, y + height / 2)
+        my_turtle.goto(x + width, y + height / 2)
+        my_turtle.up()
+        
+        htree(x + width, y + height / 2, width, height / 2, depth - 1)
+        htree(x + width, y - height / 2, width, height / 2, depth - 1)
+
+my_screen.exitonclick()
+
+
